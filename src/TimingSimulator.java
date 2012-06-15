@@ -157,9 +157,7 @@ public class TimingSimulator {
 		while (queue.hasMore()) {
 			Event e = queue.getFirst();
 			
-			System.out.print("Wert von " + e.getName() + " ");
-			System.out.print("ist: " + e.getValue() + " ");
-			System.out.println("Zeit: " + e.getTime() + " ");
+			//system.out.println(e)
 			e.propagate();
 		}
 	}
